@@ -1,11 +1,9 @@
 #!/usr/bin/python3
-from variable_load_5 import a
-
-
-def find_var():
-    print(a)
-
-
 if __name__ == "__main__":
-    find_var()
+    import hidden_4
+    # Print sorted name from directory
+    for name in sorted(dir(hidden_4)):
+        # print only names that do not start with __
+        if name[:2] != '__':
+            print("{}".format(name))
 
